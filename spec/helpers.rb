@@ -208,7 +208,7 @@ end
 RSpec.configure do |config|
 	include OpenLDAP::SpecHelpers
 	include OpenLDAP::TestConstants
-	include Loggability::SpecHelpers
+	config.include Loggability::SpecHelpers
 
 	config.mock_with :rspec
 	config.include( OpenLDAP::SpecHelpers )
